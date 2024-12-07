@@ -1,4 +1,4 @@
-#include "k_nearest_neighbors.hpp"
+#include "../include/k_nearest_neighbors.hpp"
 
 
 k_nearest_neighbors::k_nearest_neighbors(unsigned int k)

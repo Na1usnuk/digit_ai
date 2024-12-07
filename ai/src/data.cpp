@@ -1,4 +1,4 @@
-#include "data.hpp"
+#include "../include/data.hpp"
 #include <iostream>
 
 data::data() :
@@ -24,6 +24,29 @@ data::data(std::vector<uint8_t> data) :
 	set_pixels(data);
 }
 
+void data::load_from_test_file(unsigned int n = 0)
+{
+	FILE* img_file;
+	fopen_s(&img_file, "../data_set/t10k-images.idx3-ubyte", "rb");
+	if (!img_file) return;
+	const unsigned int offset = (28 * 28 * n) + 16;
+	fseek(img_file, offset, SEEK_SET);
+	unsigned char pixel[1];
+	m_pixels.reserve(28 * 28);
+
+	for (int i = 0; i < 28 * 28; ++i)
+		if(fread(pixel, 1, 1, img_file))
+			m_pixels.emplace_back(pixel[0]);
+		
+	fclose(img_file);
+	FILE* label_file;
+	fopen_s(&label_file, "../data_set/t10k-labels.idx1-ubyte", "rb");
+	if (!label_file) return;
+	fseek(label_file, n + 8, SEEK_SET);
+	fread(&m_label, 1, 1, label_file);
+	fclose(label_file);
+}
+
 void data::convert_to_gray()
 {
 	std::vector<uint8_t> img;
@@ -34,6 +57,8 @@ void data::convert_to_gray()
 
 	FILE* f;
 	fopen_s(&f, "img_gray", "wb");
+
+	if (!f) return;
 
 	fwrite(img.data(), 1, img.size(), f);
 

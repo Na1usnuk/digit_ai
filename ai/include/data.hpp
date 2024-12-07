@@ -14,6 +14,9 @@ public:
 	data(uint8_t*, unsigned);
 	data(std::vector<uint8_t>);
 
+	void load_from_test_file(unsigned int);
+	void convert_to_gray();
+
 	//setters
 	void set_pixels(std::vector<uint8_t>);
 	void set_pixels(uint8_t*, unsigned);
@@ -21,7 +24,6 @@ public:
 	void set_label(uint8_t);
 	void set_enum_label(int);
 	void set_distance(double);
-	void convert_to_gray();
 
 	//getters
 	std::vector<uint8_t>::size_type size() const;

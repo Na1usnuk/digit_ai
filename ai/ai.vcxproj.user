@@ -4,19 +4,19 @@
     <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LocalDebuggerCommandArguments>..\data_set\digit.png -k=1000</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>..\data_set\digit.bmp -k=1000</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LocalDebuggerCommandArguments>..\data_set\digit.png -k=1000</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>..\data_set\digit.bmp -k=1000</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>..\data_set\digit.png -k=1000</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>..\data_set\digit.bmp -k=1000</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LocalDebuggerCommandArguments>..\data_set\digit.png -k=1000</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>..\data_set\digit.bmp -k=1000</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

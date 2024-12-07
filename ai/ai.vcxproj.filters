@@ -18,27 +18,69 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="data.cpp">
+    <ClCompile Include="src\data.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="data_handler.cpp">
+    <ClCompile Include="src\data_handler.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="k_nearest_neighbors.cpp">
+    <ClCompile Include="src\index_buffer.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\k_mean_clustering.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\k_nearest_neighbors.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vertex_array.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vertex_buffer.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderer.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\shader.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="data.hpp">
+    <ClInclude Include="include\data.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="data_handler.hpp">
+    <ClInclude Include="include\data_handler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="k_nearest_neighbors.hpp">
+    <ClInclude Include="include\index_buffer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="stb_image.h">
+    <ClInclude Include="include\k_mean_clustering.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\k_nearest_neighbors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ppm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\renderer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\shader.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vertex_array.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vertex_buffer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vertex_buffer_layout.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
